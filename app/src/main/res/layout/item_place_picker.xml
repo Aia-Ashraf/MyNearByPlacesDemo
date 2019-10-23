@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/placePickerItemName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/placePickerItemAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placePickerItemName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/placePickerItemRating"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:elevation="1dp" />
+
+    <TextView
+        android:id="@+id/placePickerItemDistance"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/placePickerItemRating"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>
