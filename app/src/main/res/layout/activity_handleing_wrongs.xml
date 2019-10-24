@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    >
+
+<ImageView
+    android:id="@+id/img_view"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="200dp"
+    android:background="@drawable/ic_wrong"
+    android:visibility="visible" />
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:id="@+id/tv_error"
+    android:text="SomeThing Went Wrong !!"
+    android:layout_gravity="center">
+
+</TextView>
+</LinearLayout>

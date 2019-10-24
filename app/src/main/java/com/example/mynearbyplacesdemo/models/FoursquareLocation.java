@@ -5,20 +5,20 @@
  * FoursquareLocation describes a location object from the Foursquare API.
  */
 
-package com.example.mynearbyplacesdemo;
+package com.example.mynearbyplacesdemo.models;
 
 public class FoursquareLocation {
 
     // The address of the location.
-    String address;
+    public String address;
 
     // The latitude of the location.
-    double lat;
+    public double lat;
 
     // The longitude of the location.
-    double lng;
+    public double lng;
 
     // The distance of the location, calculated from the specified location.
-    int distance;
+    public int distance;
 
 }

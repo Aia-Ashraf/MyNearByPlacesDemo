@@ -1,11 +1,7 @@
-/**
- * Filename: FoursquareService.java
- * Author: Matthew Huie
- *
- * FoursquareService provides a Retrofit interface for the Foursquare API.
- */
 
 package com.example.mynearbyplacesdemo;
+
+import com.example.mynearbyplacesdemo.models.FoursquareJSON;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

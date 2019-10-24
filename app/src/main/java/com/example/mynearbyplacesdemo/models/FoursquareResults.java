@@ -5,11 +5,11 @@
  * FoursquareResults describes a results object from the Foursquare API.
  */
 
-package com.example.mynearbyplacesdemo;
+package com.example.mynearbyplacesdemo.models;
 
 public class FoursquareResults {
 
     // A venue object within the results.
-    FoursquareVenue venue;
+    public FoursquareVenue venue;
 
 }

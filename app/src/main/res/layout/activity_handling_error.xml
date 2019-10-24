@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
     >
 
@@ -11,15 +12,16 @@
         android:id="@+id/img_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_no_data"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_no_data"
         android:layout_centerVertical="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="200dp"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 <TextView
     android:layout_width="100dp"
     android:layout_height="50dp"
+    android:id="@+id/tv_error"
     android:text="No Data Found"
     android:layout_gravity="center">
 

@@ -5,15 +5,11 @@
  * FoursquareResponse describes a response object from the Foursquare API.
  */
 
-package com.example.mynearbyplacesdemo;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.mynearbyplacesdemo.models;
 
 public class FoursquareResponse {
 
     // A group object within the response.
-    FoursquareGroup group;
-    List<FoursquareVenue> venues = new ArrayList<>();
+    public FoursquareGroup group;
 
 }
