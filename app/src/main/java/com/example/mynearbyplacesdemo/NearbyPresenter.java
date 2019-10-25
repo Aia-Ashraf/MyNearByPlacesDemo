@@ -34,7 +34,7 @@ public class NearbyPresenter {
     private GoogleApiClient mGoogleApiClient;
     private RecyclerView placePicker;
     private PlacePickerAdapter placePickerAdapter;
-    private String foursquareBaseURL = "https://api.foursquare.com/v2/";
+    private String foursquareBaseURL = context.getString(R.string.base_url);
     private String foursquareClientID = "KKE3GF3FQ3L133GTENHAQF2XWLFDVHXNU0F1S0KCOUBV10BD";
     private String foursquareClientSecret = "0AEJ403ARKSAAIAOJLBWKJMYXHN2CP22DCQMN3PSKPONHJNU";
 
