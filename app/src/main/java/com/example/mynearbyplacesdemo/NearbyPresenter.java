@@ -9,6 +9,7 @@ import com.example.mynearbyplacesdemo.models.FoursquareGroup;
 import com.example.mynearbyplacesdemo.models.FoursquareJSON;
 import com.example.mynearbyplacesdemo.models.FoursquareResponse;
 import com.example.mynearbyplacesdemo.models.FoursquareResults;
+import com.example.mynearbyplacesdemo.views.NearbyView;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
