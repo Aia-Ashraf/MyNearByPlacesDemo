@@ -21,8 +21,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-class NearbyPresenter {
-    NearbyPresenter(Context context, GoogleApiClient googleApiClient, RecyclerView recyclerView, NearbyView nearbyView) {
+public class NearbyPresenter {
+    public NearbyPresenter(Context context, GoogleApiClient googleApiClient, RecyclerView recyclerView, NearbyView nearbyView) {
         this.context = context;
         this.mGoogleApiClient = googleApiClient;
         this.placePicker = recyclerView;
@@ -39,7 +39,7 @@ class NearbyPresenter {
     private String foursquareClientSecret = "0AEJ403ARKSAAIAOJLBWKJMYXHN2CP22DCQMN3PSKPONHJNU";
 
 
-    void network() {
+    public void network() {
         Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
         if (mLastLocation != null) {
