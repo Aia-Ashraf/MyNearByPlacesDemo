@@ -3,6 +3,7 @@
 package com.example.mynearbyplacesdemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mynearbyplacesdemo.models.FoursquareResults;
+import com.example.mynearbyplacesdemo.views.MapsActivity;
 
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class PlacePickerAdapter extends RecyclerView.Adapter<PlacePickerAdapter.
 
     private List<FoursquareResults> results;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView name;
         TextView address;
@@ -32,7 +34,7 @@ public class PlacePickerAdapter extends RecyclerView.Adapter<PlacePickerAdapter.
 
         public ViewHolder(View v) {
             super(v);
-
+            v.setOnClickListener(this);
             name = (TextView)v.findViewById(R.id.placePickerItemName);
             address = (TextView)v.findViewById(R.id.placePickerItemAddress);
             rating = (TextView)v.findViewById(R.id.placePickerItemRating);
@@ -40,6 +42,17 @@ public class PlacePickerAdapter extends RecyclerView.Adapter<PlacePickerAdapter.
         }
 
 
+        @Override
+        public void onClick(View v) {
+            Context context = name.getContext();
+            Intent i = new Intent(context, MapsActivity.class);
+            i.putExtra("name", name.getText());
+            i.putExtra("ID", id);
+            i.putExtra("latitude", latitude);
+            i.putExtra("longitude", longitude);
+            context.startActivity(i);
+
+        }
     }
 
     public PlacePickerAdapter(Context context, List<FoursquareResults> results) {

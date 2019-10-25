@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mynearbyplacesdemo.NearbyPresenter;
 import com.example.mynearbyplacesdemo.R;
+import com.example.mynearbyplacesdemo.presenters.NearbyPresenter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;

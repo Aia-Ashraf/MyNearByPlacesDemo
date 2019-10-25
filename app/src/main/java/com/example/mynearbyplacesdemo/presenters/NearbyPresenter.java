@@ -1,10 +1,12 @@
-package com.example.mynearbyplacesdemo;
+package com.example.mynearbyplacesdemo.presenters;
 
 import android.content.Context;
 import android.location.Location;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mynearbyplacesdemo.FoursquareService;
+import com.example.mynearbyplacesdemo.PlacePickerAdapter;
 import com.example.mynearbyplacesdemo.models.FoursquareGroup;
 import com.example.mynearbyplacesdemo.models.FoursquareJSON;
 import com.example.mynearbyplacesdemo.models.FoursquareResponse;
@@ -34,7 +36,7 @@ public class NearbyPresenter {
     private GoogleApiClient mGoogleApiClient;
     private RecyclerView placePicker;
     private PlacePickerAdapter placePickerAdapter;
-    private String foursquareBaseURL = context.getString(R.string.base_url);
+    private String foursquareBaseURL = "https://api.foursquare.com/v2/";
     private String foursquareClientID = "KKE3GF3FQ3L133GTENHAQF2XWLFDVHXNU0F1S0KCOUBV10BD";
     private String foursquareClientSecret = "0AEJ403ARKSAAIAOJLBWKJMYXHN2CP22DCQMN3PSKPONHJNU";
 
