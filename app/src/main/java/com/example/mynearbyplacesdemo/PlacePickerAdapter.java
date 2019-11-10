@@ -18,19 +18,15 @@ import java.util.List;
 
 public class PlacePickerAdapter extends RecyclerView.Adapter<PlacePickerAdapter.ViewHolder> {
 
-    private Context context;
+     Context context;
 
     private List<FoursquareResults> results;
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView name;
-        TextView address;
-        TextView rating;
-        TextView distance;
+        TextView name, address,rating,distance;
         String id;
-        double latitude;
-        double longitude;
+        double latitude,longitude;
 
         public ViewHolder(View v) {
             super(v);
